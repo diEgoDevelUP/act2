@@ -1,0 +1,200 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+}
+
+#imagen1 {
+    width: 400px;
+    height: 200px;
+}
+
+#imagen2 {
+    width: 300px;
+    height: 250px;
+}
+
+.navegador {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 80px;
+    background-color: #b30000;
+}
+
+.menu {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #DEDEDE;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu2 {
+    display: flex;
+    padding-top: 20px;
+}
+
+.menu2>h2 {
+    color: #a40000;
+}
+
+.menu2>.imagenesrbd {
+    display: flex;
+    padding-left: 880px;
+}
+
+.menu2>.imagenesrbd>a>img {
+    width: 50px;
+}
+
+.parrafomain {
+    padding-top: 20px;
+}
+
+.parrafomain>p {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.infoadicional {
+    display: flex;
+    padding-top: 20px;
+}
+
+.infoadicional>.mision>.imagen>.vision {
+    justify-content: space-between;
+}
+
+.mision {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.vision {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.mision>h3 {
+    text-align: center;
+}
+
+.vision>h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #7f0000;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+}
+
+@media(max-width:800px) {
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 250px;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #b30000;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .menu2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu2 h2 {
+        text-align: center;
+    }
+
+    .menu2 .imagenesrbd {
+        padding: 0;
+        }
+
+    .infoadicional {
+       flex-direction: column;
+    }
+
+    .imagen{
+        order: -1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mision {
+        margin-bottom: 20px;
+    }
+}
